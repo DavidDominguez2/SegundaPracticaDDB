@@ -1,0 +1,16 @@
+﻿@model List<Comic>
+
+<h1>Comics SQL y ORACLE</h1>
+
+<div class="container">
+    @foreach (Comic c in Model) {
+         <div class="card">
+            <img src="@c.Imagen" style="width: 300px; height: 400px"/>
+            <div>
+                <h3>@c.Nombre</h3>
+                <p>@c.Descripcion</p>
+            </div>
+         </div>
+    }
+   
+</div>
